@@ -19,7 +19,6 @@ jobs:
 
         name: Install dependencies
         run: npm install
-        working-directory: ./
 
       - name: Build Docker image
         run: docker build -t ${{ github.repository }} .
