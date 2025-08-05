@@ -18,7 +18,8 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: ./     
+        run: npm start
+        working-directory: ./package.json  
 
       - name: Build Docker image
         run: docker build -t ${{ github.repository }} .
