@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: npm start
-        working-directory: ./package.json  
+        working-directory: ./app
 
       - name: Build Docker image
         run: docker build -t ${{ github.repository }} .
